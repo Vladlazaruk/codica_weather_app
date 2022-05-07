@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/codica_weather_app/static/css/main.737fbae7.css",
+    "main.js": "/codica_weather_app/static/js/main.2aabe26c.js",
+    "static/media/heavy-rain.svg": "/codica_weather_app/static/media/heavy-rain.4ffd66c380c17118fb05a4e899cb3ba9.svg",
+    "static/media/snow.svg": "/codica_weather_app/static/media/snow.0ff11d7ccc6a2f3e87863b936fcd75a1.svg",
+    "static/media/refresh.svg": "/codica_weather_app/static/media/refresh.17b7724e8260df68c728e3d0ee88cc78.svg",
+    "static/media/haze.svg": "/codica_weather_app/static/media/haze.4d0143cbbc7af350a70c150a0adc6ffd.svg",
+    "static/media/sleet.svg": "/codica_weather_app/static/media/sleet.98f965c22fc61f4757711ff681235436.svg",
+    "static/media/rain.svg": "/codica_weather_app/static/media/rain.21b297b783b528c7b64f0483b91b0bec.svg",
+    "static/media/partly-cloudy.svg": "/codica_weather_app/static/media/partly-cloudy.25dffb0b57affff634452d0c5a25d8f0.svg",
+    "static/media/wind.svg": "/codica_weather_app/static/media/wind.ac85c9d27059845f541ead92b1d21026.svg",
+    "index.html": "/codica_weather_app/index.html",
+    "static/media/thunderstorm.svg": "/codica_weather_app/static/media/thunderstorm.1bc8a5d8c43e57f36b062d4a9c7cb225.svg",
+    "static/media/cloudy.svg": "/codica_weather_app/static/media/cloudy.752485c77cd09c6f32297cf21a38efbe.svg",
+    "static/media/pressure.svg": "/codica_weather_app/static/media/pressure.d6084eb832cfeee5b7451c03b77eff5d.svg",
+    "static/media/sunny.svg": "/codica_weather_app/static/media/sunny.f310ad2ae8e7766515561ffe9d4792c0.svg",
+    "static/media/delete.svg": "/codica_weather_app/static/media/delete.5fa23efa4d0eeddb8aacc328d7b7f000.svg",
+    "static/media/humidity.svg": "/codica_weather_app/static/media/humidity.c29919354b4b04d6e6c165012263aac9.svg",
+    "static/media/high.svg": "/codica_weather_app/static/media/high.97469d93711a9bf5f8c99367be896bc0.svg",
+    "static/media/low.svg": "/codica_weather_app/static/media/low.495a880ae7c8823a1e86dd87d2158939.svg",
+    "main.737fbae7.css.map": "/codica_weather_app/static/css/main.737fbae7.css.map",
+    "main.2aabe26c.js.map": "/codica_weather_app/static/js/main.2aabe26c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.737fbae7.css",
+    "static/js/main.2aabe26c.js"
+  ]
+}
