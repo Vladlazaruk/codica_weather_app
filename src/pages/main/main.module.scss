@@ -1,0 +1,23 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #acb6e5;
+  background: linear-gradient(to right, #86fde8, #acb6e5);
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 10px;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
