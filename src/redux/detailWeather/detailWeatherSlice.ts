@@ -13,8 +13,8 @@ const initialState: IInitialState = {
   wind_speed: 0,
   humidity: 0,
   coord: {
-    lon: 0,
-    lat: 0,
+    lon: null,
+    lat: null,
   },
   weather: {
     description: '',

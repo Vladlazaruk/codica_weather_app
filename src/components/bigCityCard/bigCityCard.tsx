@@ -1,18 +1,14 @@
-import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react';
 import classNames from 'classnames/bind';
-import styles from './bigCityCard.module.scss';
-import { Card, CardContent, CardMedia, Typography } from '@mui/material';
-import { BASE_URL } from '../../constants/url';
-import { IRootState } from '../../redux/rootType';
+import { Card, CardContent } from '@mui/material';
 import { ReactComponent as Wind } from '../../assets/icons/wind.svg';
 import { ReactComponent as Pressure } from '../../assets/icons/pressure.svg';
 import { ReactComponent as Humidity } from '../../assets/icons/humidity.svg';
 import { ReactComponent as High } from '../../assets/icons/high.svg';
 import { ReactComponent as Low } from '../../assets/icons/low.svg';
-import { IInnerWeather } from '../../redux/type';
 import { IBigCityCardProps } from './type';
-import WeatherIcon from '../weatherIcon/weatherIcon';
+import { WeatherIcon } from '../weatherIcon/weatherIcon';
+import styles from './bigCityCard.module.scss';
 
 const cx = classNames.bind(styles);
 
@@ -35,7 +31,7 @@ export const BigCityCard = ({
           <div className={cx('card__content')}>
             <div className={cx('card__content_left')}>
               <WeatherIcon big code={weather.id}/>
-              <span className={cx('card__content_temp')}>
+              <span data-testid='temp' className={cx('card__content_temp')}>
                 {`${Math.round(temp)}°`}
               </span>
             </div>

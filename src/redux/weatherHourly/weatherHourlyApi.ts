@@ -11,7 +11,6 @@ export const fetchHourlyWeatherAction = createAsyncThunk(
       .catch(error => {
         throw new Error(error);
       });
-    console.log(result)
     return result;
   }
 );

@@ -1,8 +1,8 @@
 import { IInnerWeather } from "../type";
 
 export interface ICoordinates {
-  lat?: number;
-  lon?: number;
+  lat?: number | null;
+  lon?: number | null;
 }
 
 export interface IInitialState {

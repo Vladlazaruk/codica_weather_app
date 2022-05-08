@@ -31,9 +31,8 @@ const weatherSlice = createSlice({
     initialCitiesList: (state: IInitialState, action: PayloadAction<string[]>) => {
       state.citiesList = Array.from(new Set([...state.citiesList, ...action.payload]));
     },
-    addNewCity: (state: IInitialState, action: PayloadAction<string>) => {
-      state.citiesList = [...state.citiesList, action.payload];
-      state.name = action.payload;
+    addNewCity: (state: IInitialState, action: PayloadAction<string[]>) => {
+      state.citiesList = action.payload;
     },
     deleteCity: (state: IInitialState, action: PayloadAction<string>) => {
       state.citiesList = state.citiesList.filter(

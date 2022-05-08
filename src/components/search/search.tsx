@@ -14,11 +14,14 @@ export const Search = ({ onChange, value, onClick, status }: ISearchProps) => (
       type='search'
       value={value}
       onChange={onChange}
+      data-testid='search'
     />
     <Button
       className={cx('search__btn')}
       variant="contained"
-      onClick={onClick}>
+      onClick={onClick}
+      data-testid='searchBtn'
+    >
         ADD NEW CITY
     </Button>
   </div>

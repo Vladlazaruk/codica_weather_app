@@ -1,12 +1,9 @@
-export const addItemInStorage = (item?: string): void => {
+export const addItemInStorage = (item: string): string[] => {
     const dataFromStorage = localStorage.getItem('listOfCities');
-    if (!dataFromStorage) {
-      localStorage.setItem('listOfCities', JSON.stringify(['Kyiv', 'Kharkiv', 'Chernihiv']));
-    }
-    const toDosFromStorage = JSON.parse(localStorage.getItem('listOfCities') || '[]');
-    if (!!item) {
-      localStorage.setItem('listOfCities', JSON.stringify([...toDosFromStorage, item]));
-    }
+    const arrFromStorage = JSON.parse(dataFromStorage || '[]');
+    const result = [...arrFromStorage, item]
+    localStorage.setItem('listOfCities', JSON.stringify(result));
+    return result;
 };
 
 export const removeItemFromStorage = (arr: string[]): void => {
@@ -14,6 +11,11 @@ export const removeItemFromStorage = (arr: string[]): void => {
 };
 
 export const getItemsFromStorage = () => {
-    const result = localStorage.getItem('listOfCities');
-    if (result) return JSON.parse(result);
+    const dataFromStorage = localStorage.getItem('listOfCities');
+    const initValue = ['Kyiv', 'Kharkiv', 'Chernihiv'];
+    if (dataFromStorage) {
+      return JSON.parse(dataFromStorage);
+    }
+    localStorage.setItem('listOfCities', JSON.stringify(initValue));
+    return initValue;
 };

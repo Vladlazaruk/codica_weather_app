@@ -10,8 +10,8 @@ export interface IInitialState {
   wind_speed: number;
   humidity: number;
   coord: {
-    lon: number;
-    lat: number;
+    lon: number | null;
+    lat: number | null;
   };
   weather: IInnerWeather;
   error: string | null;

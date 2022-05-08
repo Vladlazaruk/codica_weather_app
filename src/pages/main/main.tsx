@@ -25,15 +25,13 @@ export const Main = ()  => {
   const addCity = ():void => {
     const isInList = listOfCity.map((city) => city.toLocaleLowerCase()).includes(value);
     if (!!value.length && !isInList) {
-      dispatch(addNewCity(value));
-      addItemInStorage(value);
+      dispatch(addNewCity(addItemInStorage(value)));
     }
     setValue('');
   };
 
   useEffect(() => {
-    addItemInStorage();
-      dispatch(initialCitiesList(getItemsFromStorage()));
+    dispatch(initialCitiesList(getItemsFromStorage()));
   }, []);
 
     return (

@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { IInnerWeather } from '../type';
 import { IInitialState, IPayload } from './type';
 import { fetchHourlyWeatherAction } from './weatherHourlyApi';
 

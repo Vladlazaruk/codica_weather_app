@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BigCityCard } from '../../components/bigCityCard/bigCityCard';
 import store from '../../redux/store';
 import { Chart } from '../../components/chart/chart';
-import { IRootState } from '../../redux/rootType';
 import { useParams } from 'react-router-dom';
 import { fetchDetailyWeatherAction } from '../../redux/detailWeather/detailWeatherApi';
 import { fetchHourlyWeatherAction } from '../../redux/weatherHourly/weatherHourlyApi';
@@ -34,7 +33,7 @@ export const DetailInfo = ()  => {
     } = useSelector(detailWeatherSelector);
    
     useEffect(() => {
-      dispatch(fetchHourlyWeatherAction(coordinate));
+      coordinate && dispatch(fetchHourlyWeatherAction(coordinate));
       id && dispatch(fetchDetailyWeatherAction(id));
     }, [id, coordinate]);
 
